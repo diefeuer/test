@@ -1,27 +1,15 @@
 "use strict";
-/*
-//creación funcion saludar, parametro es nombre
-//convertis parametro en string
-function saludar(nombre:string) {
-    console.log("Hola " + nombre);
-}
-//creacion de objeto
-var Wolverine = {
-    nombre: "Logan"
+var nombre = "Mauricio";
+var numero = 123;
+var bolean = true;
+var hoy = new Date();
+hoy = new Date('1988-04-21');
+var cualquiera;
+cualquiera = nombre;
+cualquiera = numero;
+cualquiera = bolean;
+cualquiera = hoy;
+var Mauricio = {
+    nombre: "Mauricio",
+    edad: 31
 };
-
-//var nombre = "Logan";
-
-//funcion saludar devuelve objeto con atribo string nombre= Logan
-saludar(Wolverine.nombre.toUpperCase());
-// saludar(Wolverine.edad);
-saludar(Wolverine.nombre.toLowerCase());
-
- */
-//let 
-var mensaje = "Hola";
-if (true) {
-    var mensaje_1 = "Adios";
-    console.log(mensaje_1);
-}
-console.log(mensaje);
