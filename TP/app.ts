@@ -18,11 +18,12 @@ saludar(Wolverine.nombre.toLowerCase());
 
  */
 
-
-var mensaje="Hola";
+//let 
+let mensaje="Hola";
 
 if(true){
-    mensaje = "Adios";
+   let mensaje = "Adios";
+   console.log(mensaje);
 }
 
 console.log(mensaje);
