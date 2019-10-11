@@ -1,19 +1,15 @@
-let nombre:string = "Mauricio";
-let numero:number = 123;
-let bolean:boolean =    true;
+let nombre:string = "Juan";
+let apellido:string = "Perez";
+let edad:number = 31;
 
-let hoy = new Date();
+//let texto = "Hola " +  nombre + " "+apellido + " "+edad;
+let texto = `HOla,
+ ${nombre} ${apellido} ${edad}`;
 
-hoy = new Date('1988-04-21');
+ let texto2:string = `${1+2}`;
 
-let cualquiera:any;
+ console.log(texto2);
+ 
 
-cualquiera=nombre;
-cualquiera=numero;
-cualquiera=bolean;
-cualquiera=hoy;
+console.log(texto);
 
-let Mauricio = {
-    nombre: "Mauricio",
-    edad  :31
-};
