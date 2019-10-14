@@ -1,24 +1,31 @@
 
-let avenger = {
-    nombre : "Steve",
-    clave: "Capitan America",
-    poder : "droga"
-}
+//resolve = resolver , reject = rechazar
+let prom1 = new Promise( function( resolve, reject){
 
-//traer info de objeto en una linea (*destructuración)
-//{poder:string} = pasa a ser un alias.
-let {nombre,clave,poder} = avenger;
+    setTimeout(() => {
+       console.log("promesa terminada");
+        
+       //termina bien 
+       //resolve();
 
-//traer info de objeto
-// let nombre = avenger.nombre;
-// let clave = avenger.clave;
-// let poder = avenger.poder;
+       //termina mal
+       reject()
+
+    }, 1500);
+
+})
+
+console.log("paso 1");
 
 
-console.log(nombre,poder, clave);
+prom1.then( function(){
+    console.log("Ejecutar si sale bien");
+    
+},
+    function(){
+        console.log("Ejecutar si sale mal");
+        
+    }
+)
 
-let superHeroes:string[] = ["thor","hulk","tony"];
-
-let [ a, b, c ] = superHeroes;
-
-console.log(a,b,c);
+console.log("paso 2");
