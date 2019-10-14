@@ -6,15 +6,15 @@ function activar(
   let mensaje: string;
     //objeto = "La Baticuea'";
   if(momento){
-    mensaje = `${quien} activo : ${objeto} en la ${ momento }`;
+    mensaje = `${quien} RIICCAAA : ${objeto} en la ${ momento }`;
   }else{
-    mensaje = `${quien} activo : ${objeto}`;
+    mensaje = `${quien} RRIICCA : ${objeto}`;
   }
   
 
   console.log(mensaje);
 }
 
-activar("Gordo");
+activar("Gorda");
 
 activar("Flaco","noche")
