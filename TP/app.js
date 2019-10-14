@@ -1,12 +1,15 @@
 "use strict";
-function getNombre() {
-    return "Fernando";
+function activar(quien, momento, objeto) {
+    if (objeto === void 0) { objeto = "batiseñal"; }
+    var mensaje;
+    //objeto = "La Baticuea'";
+    if (momento) {
+        mensaje = quien + " activo : " + objeto + " en la " + momento;
+    }
+    else {
+        mensaje = quien + " activo : " + objeto;
+    }
+    console.log(mensaje);
 }
-var nombre = "Juan";
-var apellido = "Perez";
-var edad = 31;
-//let texto = "Hola " +  nombre + " "+apellido + " "+edad;
-var texto = "Hola,\n " + nombre + " " + apellido + " " + edad;
-//let texto2:string = `${1+2}`;
-var texto2 = "" + getNombre();
-console.log(texto2);
+activar("Gordo");
+activar("Flaco", "noche");

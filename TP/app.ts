@@ -1,16 +1,20 @@
-function getNombre() {
-  return "Fernando";
+function activar(
+        quien:string, 
+        momento?:string,
+        objeto:string = "batiseñal" 
+        ) {
+  let mensaje: string;
+    //objeto = "La Baticuea'";
+  if(momento){
+    mensaje = `${quien} activo : ${objeto} en la ${ momento }`;
+  }else{
+    mensaje = `${quien} activo : ${objeto}`;
+  }
+  
+
+  console.log(mensaje);
 }
 
-let nombre: string = "Juan";
-let apellido: string = "Perez";
-let edad: number = 31;
+activar("Gordo");
 
-//let texto = "Hola " +  nombre + " "+apellido + " "+edad;
-let texto = `Hola,
- ${nombre} ${apellido} ${edad}`;
-
-//let texto2:string = `${1+2}`;
-let texto2: string = `${getNombre()}`;
-
-console.log(texto2);
+activar("Flaco","noche")
