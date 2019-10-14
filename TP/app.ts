@@ -1,15 +1,16 @@
-let nombre:string = "Juan";
-let apellido:string = "Perez";
-let edad:number = 31;
+function getNombre() {
+  return "Fernando";
+}
+
+let nombre: string = "Juan";
+let apellido: string = "Perez";
+let edad: number = 31;
 
 //let texto = "Hola " +  nombre + " "+apellido + " "+edad;
-let texto = `HOla,
+let texto = `Hola,
  ${nombre} ${apellido} ${edad}`;
 
- let texto2:string = `${1+2}`;
+//let texto2:string = `${1+2}`;
+let texto2: string = `${getNombre()}`;
 
- console.log(texto2);
- 
-
-console.log(texto);
-
+console.log(texto2);
