@@ -73,3 +73,5 @@ class Rectangulo {
 
 let texto = 'hola';
 
+let texto2 = `hola`;
+let texto3 = "hola";

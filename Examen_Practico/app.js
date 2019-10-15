@@ -51,3 +51,5 @@ var Rectangulo = /** @class */ (function () {
     return Rectangulo;
 }());
 var texto = 'hola';
+var texto2 = "hola";
+var texto3 = "hola";
