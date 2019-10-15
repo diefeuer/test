@@ -70,3 +70,6 @@ class Rectangulo {
     
   }
 }
+
+let texto = 'hola';
+
